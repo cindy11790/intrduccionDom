@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;background-image: url(../img/recetas.avif);
+    background-position: center center;
+    background-size: cover;     /* para extender la imagen*/
+    background-repeat: no-repeat;  /* para que no se repita la imagen*/
+    display: flex;
+    justify-content: center; /*para que centre de forma vertical*/
+    align-items: center; /*centrar de forma vertical*/
+
+}
+.form{
+    width: 40%;
+    height: 40%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter:blur(10px); /*efecto de glass de filtro, entre mayor porcentaje, se va notar mas la distrcion, mas cerca al 0 se ve muy poco*/
+
+}
+.form div{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.form div label{
+    color: white;
+    letter-spacing: 2px; /* para generar espacio en la letra del formulario*/
+}
+
+.form div input{
+    outline: none; /* para quitarle el borde al boton*/
+    height: 30px;
+    border-radius: 10px;
+}
+
+.form button{
+    width: 40%;
+    margin-top: 20px;
+    background-color: white;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+
+}
